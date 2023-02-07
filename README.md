@@ -33,53 +33,22 @@ immutable - Creating and use Java subclasses
 
 Overriding Methods, Polymorphism, and Static Classes : Using
 access levels: private, protected, default, and public
-- Overriding
-methods
-- Using virtual method invocation
-- Using varargs to specify
+-Overriding methods
+-Using virtual method invocation
+-Using varargs to specify
 variable arguments
-
-- Using the instanceof operator to compare object
-
-types
-- Using upward and downward casts
-
-- Modeling business
-
+-Using the instanceof operator to compare object types
+-Using upward and downward casts
+-Modeling business
 problems by using the static keyword
-
-- Implementing the singleton
+-Implementing the singleton
 design pattern. Abstract and Nested Classes: Designing general
--
-
-purpose base classes by using abstract classes
-
-- Constructing abstract
-
-Java classes and subclasses
-
-- Applying final keyword in Java
--
-
-Distinguish between top
-
--level and nested classes. Interfaces and
-
-Lambda Expressions: Defining a Java interface
-
-- Choosing between
-
-interface inheritance and class inheritance
-
-- Extending an interface
--
-
-Defaulting methods
-
-- Anonymous inner classes
-
-- Defining a Lambda
-
+-purpose base classes by using abstract classes -Constructing abstract
+Java classes and subclasses - Applying final keyword in Java
+Distinguish between top -level and nested classes. Interfaces and
+Lambda Expressions: Defining a Java interface - Choosing between
+interface inheritance and class inheritance - Extending an interface
+Defaulting methods - Anonymous inner classes - Defining a Lambda
 Expression
 
 
