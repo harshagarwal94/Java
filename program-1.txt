@@ -1,0 +1,30 @@
+public class ThrowDemo
+{
+p.s.v.main(String[] aa)
+{
+ThrowDemo td1=new ThrowDemo();
+ThrowDemo td2;
+try
+{
+td1.test();
+}
+catch(NullPointerException npe)
+{
+s.o.p(""Caught second time");
+}
+}
+private void test()
+{
+
+try
+{
+
+throw new NullPointerException();
+}
+catch(NullPointerException npe)
+{
+s.o.p("Got NPE");
+throw npe;
+}
+}
+}

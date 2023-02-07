@@ -1,0 +1,172 @@
+Predict the output of following Java program
+
+class Main { 
+public static void main(String args[]) { 
+	try { 
+		throw 10; 
+	} 
+	catch(int e) { 
+		System.out.println("Got the Exception " + e); 
+	} 
+} 
+} 
+(A) Got the Exception 10
+(B) Got the Exception 0
+(C) Compiler Error
+
+-------------------------------------------------------
+class Test extends Exception { } 
+
+class Main { 
+public static void main(String args[]) { 
+	try { 
+		throw new Test(); 
+	} 
+	catch(Test t) { 
+		System.out.println("Got the Test Exception"); 
+	} 
+	finally { 
+		System.out.println("Inside finally block "); 
+	} 
+} 
+} 
+(A)
+
+Got the Test Exception
+Inside finally block 
+
+(B)
+
+Got the Test Exception
+
+(C)
+
+Inside finally block 
+
+(D) Compiler Error
+-------------------------------------------------------------------
+Output of following Java program?
+class Main { 
+public static void main(String args[]) { 
+	int x = 0; 
+	int y = 10; 
+	int z = y/x; 
+} 
+} 
+
+(A) Compiler Error
+(B) Compiles and runs fine
+(C) Compiles fine but throws ArithmeticException exception
+------------------------------------------------------------
+class Base extends Exception {} 
+class Derived extends Base {} 
+
+public class Main { 
+public static void main(String args[]) { 
+// some other stuff 
+try { 
+	// Some monitored code 
+	throw new Derived(); 
+	} 
+	catch(Base b)	 { 
+	System.out.println("Caught base class exception"); 
+	} 
+	catch(Derived d) { 
+	System.out.println("Caught derived class exception"); 
+	} 
+} 
+} 
+
+(A) Caught base class exception
+(B) Caught derived class exception
+(C) Compiler Error because derived is not throwable
+(D) Compiler Error because base class exception is caught before derived class
+---------------------------------------
+class Test 
+{ 
+	public static void main(String[] args) 
+	{ 
+		try
+		{ 
+			int a[]= {1, 2, 3, 4}; 
+			for (int i = 1; i <= 4; i++) 
+			{ 
+				System.out.println ("a[" + i + "]=" + a[i] + "\n"); 
+			} 
+		} 
+		
+		catch (Exception e) 
+		{ 
+			System.out.println ("error = " + e); 
+		} 
+		
+		catch (ArrayIndexOutOfBoundsException e) 
+		{ 
+			System.out.println ("ArrayIndexOutOfBoundsException"); 
+		} 
+	} 
+} 
+(A) Compiler error
+(B) Run time error
+(C) ArrayIndexOutOfBoundsException
+(D) Error Code is printed
+(E) Array is printed
+-----------------------------------------------
+class Test 
+{ int count = 0; 
+
+	void A() throws Exception 
+	{ 
+		try
+		{ 
+			count++; 
+			
+			try
+			{ 
+				count++; 
+
+				try
+				{ 
+					count++; 
+					throw new Exception(); 
+
+				} 
+				
+				catch(Exception ex) 
+				{ 
+					count++; 
+					throw new Exception(); 
+				} 
+			} 
+			
+			catch(Exception ex) 
+			{ 
+				count++; 
+			} 
+		} 
+		
+		catch(Exception ex) 
+		{ 
+			count++; 
+		} 
+
+	} 
+
+	void display() 
+	{ 
+		System.out.println(count); 
+	} 
+
+	public static void main(String[] args) throws Exception 
+	{ 
+		Test obj = new Test(); 
+		obj.A(); 
+		obj.display(); 
+	} 
+} 
+
+(A) 4
+(B) 5
+(C) 6
+(D) Compilation error
+--------------------------------
