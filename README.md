@@ -143,10 +143,8 @@ across time zones
 
 savings
 - Defining and create timestamps, periods and durations
--
 Applying formatting to local and zoned dates and times. I/O
 Fundamentals: Describing the basics of input and output in Java
--
 Read and write data from the console - Using streams to read and
 write files - Writing and read objects using serialization. File I/O
 (NIO.2): Using the Path interface to operate on file and directory
